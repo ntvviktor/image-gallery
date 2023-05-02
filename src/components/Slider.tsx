@@ -50,9 +50,9 @@ const Slider = () => {
         (e.target as HTMLDivElement).style.cursor = "grab";
 
         const swipe = swipePower(offset.x, velocity.x);
-        if (swipe < -1000) {
+        if (swipe < -500) {
           paginate(1);
-        } else if (swipe > 1000) {
+        } else if (swipe > 500) {
           paginate(-1);
         }
       },
@@ -90,7 +90,7 @@ const Slider = () => {
             onWheel={handleWheel}
             className="inner"
             drag='x'
-            dragConstraints={{ left: -width, right: 120 }}
+            dragConstraints={{ left: -width, right: 0 }}
             dragElastic={0.4}
             whileInView={"full"}
             onDragEnd={handleDrag}
