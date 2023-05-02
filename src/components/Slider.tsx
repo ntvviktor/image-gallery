@@ -50,9 +50,9 @@ const Slider = () => {
         (e.target as HTMLDivElement).style.cursor = "grab";
 
         const swipe = swipePower(offset.x, velocity.x);
-        if (swipe < -500) {
+        if (swipe < -400) {
           paginate(1);
-        } else if (swipe > 500) {
+        } else if (swipe > 400) {
           paginate(-1);
         }
       },
