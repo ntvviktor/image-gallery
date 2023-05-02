@@ -1,4 +1,4 @@
-import { Tabs, TabList, Tab, TabIndicator, TabPanels, TabPanel, Center, Text, VStack, Icon, Box, HStack } from '@chakra-ui/react'
+import { Tabs, TabList, Tab, TabIndicator, TabPanels, TabPanel, Text, VStack, Icon, HStack } from '@chakra-ui/react'
 import Slider from './Slider'
 import { BsFacebook, BsGithub, BsLinkedin } from 'react-icons/bs'
 
